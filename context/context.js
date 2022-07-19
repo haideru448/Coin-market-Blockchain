@@ -22,6 +22,7 @@ export const CoinMarketProvider = ({ children }) => {
     error,
     isLoading: loadingCoins,
   } = useMoralisQuery('Coins')
+  console.log("the error from moralis",error)
 
   const [currentAccount, setCurrentAccount] = useState('')
   const [openBuyCryptoModal, setOpenBuyCryptoModal] = useState(false)
